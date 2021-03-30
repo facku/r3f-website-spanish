@@ -1,11 +1,11 @@
 ---
-title: Creating our first cube
+title: Creando nuestro primer cubo
 ---
 
-Let's create our first cube using `react-three-fiber`.
-The first thing we need to do is import `Canvas` from `react-three-fiber` and we need to wrap the parent of the 3D scene with it.
+Vamos a crear nuestro primer cubo usando `react-three-fiber`.
+Lo primero que tenemos que hacer es importar `Canvas` desde `react-three-fiber` y luego envolver el padre de la escena 3D `<Sene />` con él.
 
-You can also just wrap the whole app like so:
+También puedes envolver toda tu aplicación así:
 
 ```jsx
 import ReactDOM from "react-dom";
@@ -20,14 +20,14 @@ ReactDOM.render(
 );
 ```
 
-We are all set up to create our scene component and in there add our first cube.
+Ya tenemos todo configurado para crear nuestra escena y agregarle nuestro primer cubo.
 
-To make show any type of object in our scene we need to create a mesh, and that consists of:
+Para mostrar cualquier tipo de objeto en nuestra escena necesitamos crear un `mesh` (malla), y esto consiste en:
 
-- A geometry, in this case our cube but it can be any geometry from [threejs](https://threejs.org/docs/#api/en/geometries/BoxBufferGeometry) or even a custom model you made in blender or any other software.
-- A material, this tells the mesh how this object will be filled. In our case we will just add a simple color that reacts to light.
+- Una geometría, en este caso nuestro cubo, pero puede ser cualquier geometría de [threejs](https://threejs.org/docs/#api/en/geometries/BoxBufferGeometry) o incluso un modelo propio hecho en [Blender](https://www.blender.org/) o algún otro software.
+- Un material, este le dice a la malla como se debe pintar este objeto. En nuestro caso solo es un simple color que reacciona a la luz.
 
-We can now create a these components and wrap them in a mesh like so:
+Ahora podemos crear estos componentes y envolverlos en una malla así: 
 
 ```jsx
 function Scene() {
@@ -40,9 +40,9 @@ function Scene() {
 }
 ```
 
-We have a geometry but it has two issues, it's black and it looks like it's 2D as we can only see one side of it.
+Tenemos una geometría pero tiene dos problemas, es negra y parece 2D ya que solo podemos ver un lado.
 
-Let's rotate it a bit just so we can see it better:
+Vamos a rotarlo un poco para que podamos verlo mejor: 
 
 ```jsx
 function Scene() {
@@ -63,4 +63,4 @@ function Scene() {
   sandbox="allow-autoplay allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
 ></iframe>
 
-In the next chapter we will learn about lights.
+En el próximo capítulo hablaremos de las luces.
