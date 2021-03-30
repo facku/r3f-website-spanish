@@ -1,14 +1,14 @@
 ---
-title: Adding Lights
+title: Agregando Luces
 ---
 
-A 3D scene will be black unless there is light and in the threejs world there are many types of lights. The most common ones are:
+Una escena 3D será negra a menos que haya luz y en el mundo de threejs hay muchos tipos de luces. Los más comunes son:
 
-- AmbientLight - This is a light that is just everywhere, doesn't shine anywhere in particular but just takes all over your scene.
+- AmbientLight (Luz ambiental): esta es una luz que está en todas partes, no brilla en ningún lugar en particular, sino que se extiende por toda la escena.
 
-- Point Light - This is as the name says a light that focuses on point, you can think of it like a lamp.
+- Point Light (punto de luz): como su nombre lo dice, una luz que se enfoca en un punto, puedes pensar en ella como una lámpara.
 
-Let's start by adding an `ambientLight` in our scene:
+Comencemos agregando un `ambientLight` en nuestra escena:
 
 ```jsx
 function Scene() {
@@ -24,9 +24,9 @@ function Scene() {
 }
 ```
 
-Our cube is now green as you can see but since we added an ambient light all the sides are lighted up the same way and it looks too consistent and not relaistic at all.
+Nuestro cubo ahora es verde, como puede ver, pero dado que agregamos una luz ambiental, todos los lados están iluminados de la misma manera y parece demasiado consistente y nada relaista.
 
-Let's also add a point light to make it better:
+Agreguemos también un punto de luz para mejorarlo: 
 
 ```jsx
 function Scene() {
@@ -43,9 +43,9 @@ function Scene() {
 }
 ```
 
-We can see that now one side is way more bright than the other because the light hits the cube from the right side since it's positioned `10` on the X axis and our cube by default will be placed at position `0` on all three axis.
+Podemos ver que ahora un lado es mucho más brillante que el otro porque la luz incide en el cubo desde el lado derecho, ya que está posicionado "10" en el eje X y nuestro cubo por defecto se colocará en la posición "0" en los tres. eje.
 
-We can see it even better if we remove the `ambientLight` and turn up the intensity and move our light to `0` on the X axis like so:
+Podemos verlo aún mejor si eliminamos el `ambientLight` y aumentamos la intensidad y movemos nuestra luz a `0` en el eje X así: 
 
 ```jsx
 <pointLight position={[0, 20, 10]} intensity={1.5} />
@@ -59,4 +59,4 @@ We can see it even better if we remove the `ambientLight` and turn up the intens
   sandbox="allow-autoplay allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
 ></iframe>
 
-Let's now go over the last step of our first scene and animate the cube.
+Repasemos ahora el último paso de nuestra primera escena y animemos el cubo.
