@@ -1,8 +1,6 @@
 # React Three Fiber Website
 
-Demo: https://r3f.netlify.app
-
-[![Netlify Status](https://api.netlify.com/api/v1/badges/e60823a1-0b2a-4cc4-8cdb-b8ef6f400ead/deploy-status)](https://app.netlify.com/sites/r3f/deploys)
+Demo: https://r3f-website-spanish.vercel.app
 
 ## How to run locally
 
