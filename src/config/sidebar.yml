@@ -1,8 +1,8 @@
-- label: "Introduction"
+- label: "Introducción"
   link: "/"
-- label: "Getting started"
+- label: "Primeros Pasos"
   link: "/getting-started"
-- label: First Scene
+- label: Primera Escena
   items:
     - label: "First Things on the Screen"
       link: "/first-scene/first-render"
