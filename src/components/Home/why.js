@@ -17,33 +17,21 @@ const Why = () => {
       `}
     >
       <section>
-        <h2>Why?</h2>
+        <h2>Por Qué?</h2>
         <p>
-          Building dynamic scene graphs declaratively with re-usable components
-          makes dealing with Threejs easier and brings order and sanity to your
-          codebase. These components react to state changes, are interactive out
-          of the box and can tap into React's infinite ecosystem.
+          La creación, dinámica y declarativa, de escenas 3D con componentes reutilizables, facilita el trabajo con Threejs y aporta orden y cordura a su código. Estos componentes reaccionan a los cambios de estado, son interactivos y estan listos para usarse y aprovechar el ecosistema infinito de React.
         </p>
       </section>
       <section>
-        <h2>Does it have limitations?</h2>
+        <h2>Tiene limitaciones?</h2>
         <p>
-          None. Everything that works in Threejs will work here. In contrast to
-          "bindings" where a library ships/maintains dozens of wrapper
-          components, it just reconciles JSX to Threejs dynamically: &lt;mesh /&gt;
-          simply is another expression for new THREE.Mesh(). It does not know or
-          target a specific Threejs version nor does it need updates for
-          modified, added or removed upstream features.
+          Ninguna. Todo lo que funciona en Threejs tambien funcionará aquí. A diferencia de los "enlaces" en los que una biblioteca envía / mantiene docenas de componentes contenedores, sencillamente reconcilia JSX con Threejs de forma dinámica: <mesh /> simplemente es otra expresión para el nuevo THREE.Mesh (). R3F no necesita de una versión específica de Threejs ni necesita actualizaciones para las funciones anteriores modificadas, agregadas o eliminadas.
         </p>
       </section>
       <section>
-        <h2>Is it slower than raw Threejs?</h2>
+        <h2>Es más lento que Threejs solo?</h2>
         <p>
-          No. Rendering performance is up to Threejs and the GPU. Components may
-          participate in the renderloop outside of React, without any additional
-          overhead. React is otherwise very efficient in building and managing
-          component-trees, it could potentially outperform manual/imperative
-          apps at scale.
+          No. El rendimiento de renderizado depende de Threejs y la GPU. Los componentes pueden participar en el renderloop fuera de React, sin ningún gasto adicional. Por lo demás, React es muy eficiente en la creación y gestión de árboles de componentes, podría superar potencialmente a las aplicaciones manuales / imperativas a escala.
         </p>
       </section>
     </div>
