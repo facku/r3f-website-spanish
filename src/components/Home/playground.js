@@ -65,7 +65,7 @@ const Playground = () => {
         padding: 60px 0;
       `}
     >
-      <h2>Try it yourself</h2>
+      <h2>Pruebalo tu mismo</h2>
       <p
         css={`
           position: relative;
@@ -73,7 +73,7 @@ const Playground = () => {
           align-items: center;
         `}
       >
-        I want to render a{" "}
+        Quiero renderizar{" "}
         <select
           css={`
             margin: 0 5px;
@@ -81,12 +81,12 @@ const Playground = () => {
           onChange={(e) => setActiveGeometry(e.target.value)}
           onBlur={(e) => setActiveGeometry(e.target.value)}
         >
-          <option value={box}>Box</option>
-          <option value={sphere}>Sphere</option>
-          <option value={cone}>Cone</option>
-          <option value={dodecahedron}>Dodecahedron</option>
+          <option value={box}>Caja</option>
+          <option value={sphere}>Esfera</option>
+          <option value={cone}>Cono</option>
+          <option value={dodecahedron}>Dodecahedro</option>
         </select>{" "}
-        in a{" "}
+        en color{" "}
         <span
           ref={pickerButton}
           css={`
@@ -115,11 +115,10 @@ const Playground = () => {
               color={color}
               onChange={(color) => setColor(color.hex)}
             />
-          )}{" "}
+          )}
         </span>
-        color
       </p>
-      I want to show{" "}
+      Quiero mostrar{" "}
       <input
         aria-label="How many geometry to show"
         type="number"
@@ -128,7 +127,7 @@ const Playground = () => {
         value={numberOfGeometry}
         onChange={(e) => setNumberOfGeometry(e.target.value)}
       ></input>{" "}
-      geometry
+      geometria(s)
       <LiveProvider
         theme={nightOwl}
         scope={scope}
